@@ -15,3 +15,4 @@ def preprocess(text):
     corpus = np.array([word_to_id[e] for e in words])
 
     return corpus, word_to_id, id_to_word
+

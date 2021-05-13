@@ -49,7 +49,7 @@ corpus, word_to_id, id_to_word = preprocess(text)
 
 # %%
 # commonディレクトリ下のutil.pyのpreprocess関数を使う
-from common.util import preprocess
+from util import preprocess
 text = "You say goodbye and I say hellow."
 print(preprocess(text))
 # %%
