@@ -10,6 +10,6 @@ c2 = C[word_to_id['i']]
 print(cos_similarity(c0, c2))
 
 # %%
-from util import mostsimilar
+from util import most_similar
 most_similar('hellow', word_to_id, id_to_word, C)
 # %%
