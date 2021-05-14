@@ -62,6 +62,7 @@ def create_co_matrix(corpus, vocab_size, window_size=1):
         for i in range(1, window_size + 1):
             left_idx = idx-i
             right_idx = idx+i
+
             if left_idx >= 0:
                 left_word_id = corpus[left_idx]
                 co_matrix[word_id, left_word_id]+=1
@@ -76,7 +77,7 @@ from util import preprocess
 text = "You say goodbye and I say hellow."
 corpus, word_to_id, id_to_word = preprocess(text)
 print(corpus)
-matrix = create_co_matrix(corpus, len(word_to_id), len(corpus))
+matrix = create_co_matrix(corpus, len(word_to_id))
 print(matrix)
 
 # %%
